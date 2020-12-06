@@ -39,7 +39,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-12-fluid">
+			<div class="col-12-fluid">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     				<ol class="carousel-indicators">
@@ -80,14 +80,100 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-12-fluid">
+			<div class="col-12-fluid">
 				<img src="images\bag2.png" class="bag2">
 			</div>
 		</div>
 
+		<div class="row tag">
+			<div class="col-6-fluid">
+				<div><img src="images\tk (42).jpg" class="aa"></div>
+			</div>
+			<div class="col-6-fluid">
+				<div><img src="images\tk (39).jpg" class="ab"></div>
+			</div>
+		</div>
+
+		<script>
+	    $(document).on("scroll", function() {
+	        var pageTop = $(document).scrollTop();
+	        var pageBottom = pageTop + $(window).height();
+	        var tags = $(".tag");
+
+	        for (var i = 0; i < tags.length; i++) {
+	        var tag = tags[i];
+
+	        if ($(tag).position().top < pageBottom) {
+	        $(tag).addClass("visible");
+	        }
+	        }
+	    });
+		</script>
+
 		<div class="row">
-			<div class="col-lg-12 txt">
-				Koleksi Terbaru
+			<div class="col-12-fluid">
+				<div class="ac ad text-center">All you need is here.</div>
+			</div>
+		</div>
+
+		<div class="row tag2">
+			<div class="col-6-fluid">
+				<div><img src="images\tk (45).jpg" class="ae"></div>
+			</div>
+			<div class="col-6-fluid">
+				<div class="ai">
+					<p class="af">Skincare dengan Kandungan <br>Rose Oil untuk Kulit Lembab <br>yang Glowing</p>
+					<p class="ag">Baru! Wardah Hydra Rose Series untuk Menghidrasi <br>Kulit Cantikmu</p>
+					<p class="ah">Kulit yang kering akan menyebabkan wajah jadi gatal, <br>kemerahan, pecah-pecah, tertarik, hingga terlihat kusam. <br>Kalau kamu memiliki masalah kulit kering seperti ini, kamu <br>bisa mulai merangkai skincare regimen dengan produk-<br>produk yang secara spesifik membuat kulit lembab dan <br>lebih glowing.</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+	    $(document).on("scroll", function() {
+	        var pageTop = $(document).scrollTop();
+	        var pageBottom = pageTop + $(window).height();
+	        var tags = $(".tag2");
+
+	        for (var i = 0; i < tags.length; i++) {
+	        var tag = tags[i];
+
+	        if ($(tag).position().top < pageBottom) {
+	        $(tag).addClass("visible2");
+	        }
+	        }
+	    });
+		</script>
+
+		<div class="row aj ak">
+			<div class="col-lg-3 al">
+				<div class="garis"></div>
+				<div>PRODUK</div>
+				<div><a href="#">SKINCARE</a></div>
+				<div><a href="#">MAKE UP</a></div>
+				<div><a href="#">HAIRCARE</a></div>
+				<div><a href="#">BODYCARE</a></div>
+				<div><a href="#">INSTAPERFECT</a></div>
+			</div>
+			<div class="col-lg-3 al">
+				<div class="garis"></div>
+				<div>ACTIVITIES</div>
+				<div><a href="#">Wardah Inspiring Movement</a></div>
+				<div><a href="#">Wardah Fashion Journey</a></div>
+			</div>
+			<div class="col-lg-3 al">
+				<div class="garis"></div>
+				<div>TERHUBUNG DENGAN KAMI</div>
+				<div><a href="#">facebook</a></div>
+			</div>
+			<div class="col-lg-3 am">
+				<div class="garis"></div>
+				<div>IKUTI BERITA DAN UPDATE KAMI</div>
+				<br>
+				<div>
+					<input class="an" type="text" name="text" placeholder="Ketikkan alamat email kamu">
+					<button class="ao">Kirim</button>
+				</div>
 			</div>
 		</div>
 	</div>
