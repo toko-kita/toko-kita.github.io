@@ -60,11 +60,9 @@
 @media screen and (max-width:600px){
 	.aa{
 		height:100%;
-		object-fit:cover;
 	}
 	.ab{
 		height:100%;
-		object-fit:cover;
 	}
 	.ac{
 		margin-top:5px;
@@ -82,6 +80,7 @@
 .aj{
 	background-color:#66d0e3;
 	width:100%;
+	margin:0;
 }
 .ak{
 	padding-top:60px;
@@ -117,6 +116,11 @@ a:hover{
 	border-top:2px solid white;
 	width:60px;
 	padding-bottom:40px;
+}
+@media screen and (max-width:600px){
+	.garis{
+		display:none;
+	}
 }
 .am{
 	font-family:Verdana, sans-serif;
